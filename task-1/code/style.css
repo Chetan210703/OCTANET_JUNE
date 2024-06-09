@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.top {
+    display: flex;
+    height: 60vh;
+    width: 100vw;
+    margin-top: 2px;
+    background-color: #060724;
+}
+
+.topimg {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+}
+
+.topimg img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    margin-left: 12px;
+    color: white;
+    width: 50%;
+}
+
+.overlay h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.overlay strong {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.overlay h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e6b800;
+}
+.middle{
+    background-color: #EB7F67;
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    overflow: hidden;
+}
+.middle h1, .middle h2 {
+    width: 50%;
+    color: white;
+}
+.middle h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 65px;
+}
+.middle h2{
+    padding: 15px 34px 0 0;
+    line-height: 3;
+    font-size: 20px;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.aboutme{
+    width: 100vw;
+    display: flex;
+    background-color: #EDECED;
+}
+.aboutmeimg {
+    width: 30vw;
+    height: 70vh;
+}
+.aboutmeimg>img{
+    width: 30vw;
+    height: 70vh;
+    object-fit: cover;
+    object-position: center;
+}
+.ltext {
+   margin: 50px;
+   line-height: 2;
+   font-size: 20px;
+}
+.bottom{
+    background-color: #EB7F67;
+    color: white;
+    display: flex;  
+    width: 100vw;
+    height: 60vh;  
+}
+.b1 ,.b2{
+    width: 50%;
+}
+.b2 li{
+    list-style-type:none ;
+}
+.b2 p{
+    font-size: 22px;
+}
+ul{
+    display: flex;
+    cursor: pointer;
+    gap: 15px;
+}
+.detail{
+    line-height: 2;
+    font-size: 15px;
+}
+.b1>p{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    height: 59vh;
+}
+@media (max-width: 768px) {
+    .top {
+        position: relative;
+        width: 100%;
+        background-color: transparent;
+
+    }
+    .topimg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(img/pexels-cottonbro-5081918-1152x1152-1-1024x1024.jpg) center/cover no-repeat;
+        z-index: -1;
+    }
+    .topimg img {
+        display: none;
+    }
+    .text {
+        width: 100%;
+        text-align: start;
+        padding: 20px;
+        color: white;
+    }
+    .overlay h1, .overlay h2, .overlay strong {
+        margin: 10px 0;
+      
+    }
+
+    .aboutme {
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutmeimg {
+        width: 100%;
+        height: auto;
+    }
+    .aboutmeimg > img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+    }
+    .ltext {
+        margin: 20px;
+        text-align: center;
+    }
+    .middle{
+        flex-direction: column;
+        text-align: center;
+        font-size: 15px;
+        height: auto;
+        
+    }
+    .middle h1{
+        width: 100%;
+        font-size: 42px;
+        
+    }
+    .middle h2{
+        width: 100%;
+        text-align: center;
+        line-height: 2;
+        
+    }
+    .bottom{
+        display: block;
+        height: auto;
+    }
+    .b1>p{
+        font-size: 32px;
+        height: auto;
+        justify-content: start;
+        padding: 5px;
+
+    }
+    .b1 ,.b2{
+        width: 100%;
+    }
+    .detail{
+        font-size: 13px;
+    }
+
+}
