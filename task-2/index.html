@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weekly To-Do List</h1>
+        <button id="restart" onclick="restartTasks()">Restart</button>
+        <div class="weekly-list">
+            <div class="day-list" id="monday">
+                <h2>Monday</h2>
+                <ul></ul>
+                <input type="text" placeholder="Add a task">
+                <button onclick="addTask('monday')">Add Task</button>
+            </div>
+            <div class="day-list" id="tuesday">
+                <h2>Tuesday</h2>
+                <ul></ul>
+                <input type="text" placeholder="Add a task">
+                <button onclick="addTask('tuesday')">Add Task</button>
+            </div>
+            <div class="day-list" id="wednesday">
+                <h2>Wednesday</h2>
+                <ul></ul>
+                <input type="text" placeholder="Add a task">
+                <button onclick="addTask('wednesday')">Add Task</button>
+            </div>
+            <div class="day-list" id="thursday">
+                <h2>Thursday</h2>
+                <ul></ul>
+                <input type="text" placeholder="Add a task">
+                <button onclick="addTask('thursday')">Add Task</button>
+            </div>
+            <div class="day-list" id="friday">
+                <h2>Friday</h2>
+                <ul></ul>
+                <input type="text" placeholder="Add a task">
+                <button onclick="addTask('friday')">Add Task</button>
+            </div>
+            <div class="day-list" id="weekend">
+                <h2>Weekend</h2>
+                <ul></ul>
+                <input type="text" placeholder="Add a task">
+                <button onclick="addTask('weekend')">Add Task</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
